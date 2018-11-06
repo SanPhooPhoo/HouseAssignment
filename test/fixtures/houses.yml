@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  number_of_rooms: 1
+  Address: MyText
+  Price: 1.5
+  Owner_Name: MyString
+
+two:
+  number_of_rooms: 1
+  Address: MyText
+  Price: 1.5
+  Owner_Name: MyString
