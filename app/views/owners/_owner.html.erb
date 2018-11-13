@@ -1,0 +1,20 @@
+<% @house.owners.each do |owner| %>
+    <p>
+      <strong>Name:</strong>
+      <%= owner.Name %>
+    </p>
+   
+    <p>
+      <strong>Email:</strong>
+      <%= owner.Email %>
+    </p>
+    <p>
+      <strong>Phone:</strong>
+      <%= owner.Phone %>
+    </p>
+    <p>
+  <%= link_to 'Destroy owner', [owner.house, owner],
+               method: :delete,
+               data: { confirm: 'Are you sure?' } %>
+</p>
+  <% end %>

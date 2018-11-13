@@ -69,10 +69,10 @@ class HousesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def house_params
-      params.require(:house).permit(:number_of_rooms, :Address, :Price, :Owner_Name)
+      params.require(:house).permit(:number_of_rooms, :Address, :Price)
     end
     private
 def house_params
-  params.require(:house).permit(:number_of_rooms, :Address, :Price, :Owner_Name, :image)
+  params.require(:house).permit(:number_of_rooms, :Address, :Price, :image)
 end
 end

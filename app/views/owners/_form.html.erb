@@ -1,0 +1,18 @@
+
+<%= form_with(model: [ @house, @house.owners.build ], local: true) do |form| %>
+  <p>
+    <%= form.label :Name %><br>
+    <%= form.text_field :Name %>
+  </p>
+  <p>
+    <%= form.label :Email %><br>
+    <%= form.email_field :Email %>
+  </p>
+  <p>
+  <%= form.label :Phone %><br>
+  <%= form.number_field :Phone %>
+</p>
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>

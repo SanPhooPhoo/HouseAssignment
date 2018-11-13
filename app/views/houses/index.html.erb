@@ -8,7 +8,7 @@
       <th>Number of rooms</th>
       <th>Address</th>
       <th>Price</th>
-      <th>Owner name</th>
+      
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -19,7 +19,7 @@
         <td><%= house.number_of_rooms %></td>
         <td><%= house.Address %></td>
         <td><%= house.Price %></td>
-        <td><%= house.Owner_Name %></td>
+        
         <td><%= link_to 'Show', house %></td>
         <td><%= link_to 'Edit', edit_house_path(house) %></td>
         <td><%= link_to 'Destroy', house, method: :delete, data: { confirm: 'Are you sure?' } %></td>

@@ -15,10 +15,11 @@
   <%= @house.Price %>
 </p>
 
-<p>
-  <strong>Owner name:</strong>
-  <%= @house.Owner_Name %>
-</p>
+<h2>owners</h2>
+<%= render @house.owners %>
+
+<h2>Add a OwnerInformation:</h2>
+<%= render 'owners/form' %>
 
 <p>
 <strong>Image:</strong>
